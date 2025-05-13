@@ -17,7 +17,7 @@ public class ScreenmatchApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		var consumoApi =  new ConsumoApi();
-		var json = consumoApi.obterDados("https://omdbapi.com/?t=gilmore+girls&apikey=f39938ee");
+		var json = consumoApi.obterDados("API-Key");
 		System.out.println(json);
 
 		ConverteDados conversor =  new ConverteDados();
